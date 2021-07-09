@@ -8,7 +8,7 @@ public class Main {
         File[] files = new File("./songs").listFiles();
         while (true) {
             String fileName = files[random.nextInt(files.length) - 1].getName();
-            ProcessBuilder pb = new ProcessBuilder("ffplay", "-nodisp", "-loglevel", "quiet", "-autoexit", "-volume", "10", "songs\\" + fileName);
+            ProcessBuilder pb = new ProcessBuilder("ffplay", "-nodisp", "-loglevel", "quiet", "-autoexit", "-volume", "5", "songs\\" + fileName);
             Process process = null;
 
             try {
